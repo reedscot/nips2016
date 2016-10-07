@@ -1,0 +1,27 @@
+# Instructions:
+# 
+# Download and uncompress the metadata and modify DATA_ROOT accordingly. 
+# Download the CUB images and update CUB_IMG_DIR.
+# Download the MHP images and update MHP_IMG_DIR
+# Update CHECKPOINT_DIR, where model checkpoints will be saved.
+
+DATA_ROOT=/mnt/brain3/datasets/txt2img/nips2016_data
+
+# bird related data
+CUB_IMG_DIR=/mnt/brain1/scratch/reedscot/nx/reedscot/data/gutenbirds/CUB_200_2011/images
+CUB_BBOX_META_DIR=${DATA_ROOT}/cub_bbox
+CUB_KP_META_DIR=${DATA_ROOT}/cub_keypoints
+CUB_NET_TXT=${DATA_ROOT}/models/cub_net_txt.t7
+CUB_NET_KP=${DATA_ROOT}/models/cub_net_keypoints.t7
+
+# human related data
+MHP_IMG_DIR=/mnt/brain3/datasets/txt2img/mhp/images
+MHP_META_DIR=${DATA_ROOT}/mhp_keypoints
+MHP_NET_TXT=${DATA_ROOT}/models/mhp_net_txt.t7
+MHP_NET_KP=${DATA_ROOT}/models/mhp_net_keypoints.t7
+# Leave blank to train on all files.
+MHP_SUBSET=${DATA_ROOT}/mhp_files_subset.t7
+
+# location to save checkpoints
+CHECKPOINT_DIR=/home/reedscot/checkpoints
+
