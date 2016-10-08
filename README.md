@@ -12,7 +12,7 @@ You will need to install [Torch](http://torch.ch/docs/getting-started.html), CuD
 
 ####How to train a text to image model:
 
-1. Download the [data](https://drive.google.com/open?id=0B0ywwgffWnLLNThINzhET0lRYUU) including captions, location annotations and pretrained models.
+1. Download the [data](https://drive.google.com/open?id=0B0ywwgffWnLLSl9EcDBBTXMtcGs) including captions, location annotations and pretrained models.
 2. Download the [birds](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) and [humans](http://human-pose.mpi-inf.mpg.de/#download) image data.
 4. Modify the `CONFIG` file to point to your data.
 5. Run one of the training scripts, e.g. `./scripts/train_cub_keypoints.sh`
