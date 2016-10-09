@@ -1,4 +1,4 @@
-###<a href="http://umich.edu/~reedscot/nips2016.pdf">Learning What and Where to Draw</a>
+###<a href="http://www.scottreed.info/files/nips2016.pdf">Learning What and Where to Draw</a>
 Scott Reed, Zeynep Akata, Santosh Mohan, Samuel Tenka, Bernt Schiele, Honglak Lee
 
 This is the code for our NIPS 2016 paper on text- and location-controllable image synthesis using conditional GANs. Much of the code is adapted from [reedscot/icml2016](https://github.com/reedscot/icml2016) and [dcgan.torch](https://github.com/soumith/dcgan.torch).
