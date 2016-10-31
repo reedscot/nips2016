@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <!-- Material Design Lite -->
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="resources/css/style_kp_sam.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Neural Net Stuff -->
+    <script type="text/javascript" src="resources/javascript/DragDisk.js"></script>
+    <script type="text/javascript" src="resources/javascript/generate_kp_sam.js"></script>
+  </head>
+
+  <body>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <!-- Tabs -->
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="text-align:center;">
+          <a href="#scroll-tab-1" id="pp_tab" class="mdl-layout__tab is-active">(Keypoint, txt) -> Image</a>
+        </div>
+      </header>
+
+      <main class="mdl-layout__content">
+        <!-- Pick parts -->
+        <!--<section class="mdl-layout__tab-panel" id="scroll-tab-1">-->
+        <section>
+          <div class="page-content">
+            <table style="padding-top: 50px; width: 150px; margin: 0 auto;">
+              <tr>
+                <td class="canvas_container">
+                    <img class="placeholder" src="resources/images/placeholder.jpg" height="512px" width="512px">
+                    <canvas id="pp_canvas" class="canvas_class" style="border:1px solid #000000;" height="512px" width="768px">
+                    </canvas>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <form action="/" onsubmit="get_pp_prediction()">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="pp_description">
+                        <label class="mdl-textfield__label" for="sample3" style="color:black;">Click here to describe a bird...</label>
+
+                      </div>
+                        <!-- thanks to www.tutorialspoint.com/materialdesignlite/materialdesignlite_checkboxes.htm -->
+                        <!--<label class="mdl-checkbox mdl-js-checkbox" for="checkbox0">-->
+                          <input type="checkbox" class="mdl-checkbox__input" id="pp_showkps">
+                          <span class="mdl-checkbox__label">Show keypoints?</span>
+                        <!--</label>-->
+                    </form>
+                </td>
+              </tr>
+              <tr style="width: 125px;">
+                <td>
+                  <button style="float:left;" type="button" id="pp_clear_btn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                      Clear Inputs
+                  </button>
+                </td>
+                <td>
+                  <button style="float:right;" type="button" id="pp_generate_btn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                      Generate Image!
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+body {
+  text-align: center;
+}
+
+button.mdl-button {
+  margin: 30px;
+}
+
+td {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#placeholder {
+  opacity: 1.0;
+  width:256px;
+  height:256px;
+  text-align:left;
+}
+
+#obj_img {
+  text-align:left;
+  padding:0px;
+  margin:0px;
+  width: 256px;
+  height: 256px;
+}
+//#placeholder {
+    //opacity: 0.5;
+    //position:absolute;
+//    opacity: 1.0;
+//    padding-left:0px;
+//    margin-left:0px;
+//    left: 0px;
+//    top: 0px;
+//    width:256px;
+//    height:256px;
+//}
+
+#draw_box_canvas {
+    position:absolute; 
+    margin:0px;
+    padding:0px;
+    top: 0px; 
+    left: 0px; 
+    width: 256px;
+    height: 256px; 
+}
+
+.mdl-layout__header {
+	min-height: 30px;
+}
