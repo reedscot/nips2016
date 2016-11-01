@@ -1,0 +1,10 @@
+<html>
+<body>
+<h2>Hello, Template!</h2>
+<ul>
+# for _,s in ipairs(data) do
+    <li>@(s)</li>
+# end
+</ul>
+</body>
+</html>

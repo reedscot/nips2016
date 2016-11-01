@@ -1,0 +1,56 @@
+body {
+  text-align: center;
+}
+
+button.mdl-button {
+  margin: 30px;
+}
+
+td {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.placeholder {
+  opacity: 1.0;
+}
+
+.canvas_container {
+    position: relative;
+    text-align: left;
+}
+.pp_canvas {
+    background-color: rgba(0,255,255,0.5);
+}
+
+.canvas_class {
+    position:absolute; 
+    top: 0px; 
+    left: 0px; 
+    height: 512px; 
+    width: 768px;
+}
+
+#contextMenu{
+  height: 0px; 
+  width: 0px;
+  border:1px solid green;
+  background:white;
+  list-style:none;
+  padding:3px;
+  visibility: hidden; 
+}
+
+.mdl-layout__header {
+	min-height: 30px;
+}
+
+.demo-list-control {
+  width: 300px;
+}
+
+.demo-list-radio {
+  display: inline;
+}
+
