@@ -6,11 +6,15 @@ local util = paths.dofile('../util.lua')
 require('image')
 require('nn')
 require('nngraph')
---local uuid = require("uuid")
 require('image')
 require('json')
 
-DATA_PATH = '/Users/sanmohan/Documents/gawwn_data/'
+-- Fill in appropriate data path variable
+if arg[1] == nil then
+  print('Please enter path to folder containing data')
+else
+  DATA_PATH = arg[1]
+end
 
 net_txt = torch.load(DATA_PATH .. 'lm_sje_nc4_cub_hybrid_gru18_a1_c512_0.00070_1_10_trainvalids.txt_iter30000.t7_cpu.t7')
 net_txt:evaluate()
@@ -41,10 +45,10 @@ opt.txtSize = 1024
 opt.noisetype = 'normal'
 
 function hello:index(web)
-    local f = assert(io.open('index.html', 'r'))
-    local rtrn = f:read('*all')
-    f:close()
-    return rtrn
+  local f = assert(io.open('index.html', 'r'))
+  local rtrn = f:read('*all')
+  f:close()
+  return rtrn
 end
 
 function hello:request(web)
